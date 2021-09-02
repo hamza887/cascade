@@ -9,8 +9,8 @@
 .navbar{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* align-items: center; */
+    background-color: rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
 }
@@ -29,4 +29,123 @@
     color: white;
     padding: 8px 25px;
     transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home section */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 740px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('https://images.unsplash.com/photo-1511140973288-19bf21d7e771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80') no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    /* background-position: center; */
+    /* background-size: cover;
+    height: 90vh; */
+
+    /* height: 100%; */
+    /* width: 100%; */
+    /* z-index: -1; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 35%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    letter-spacing: 3px;
+}
+.btn{
+   padding: 10px 35px;
+   font-family: century;
+   font-size: 15px;
+   background-color: transparent;
+   border: 1px solid white;
+   color: white;
+   outline: none;
+   transition: .6s ease;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/*     ABOUT SECTION */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.pic{
+    display: flex;
+}
+.pic img{
+    width: 575px;
+    height: 400px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+.intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
 }
